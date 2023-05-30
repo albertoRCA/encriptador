@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encriptador de Texto</title>
+    <style>
+      /* Estilos CSS para la apariencia de la página */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      h1,
+      h3 {
+        text-align: center;
+      }
+      label {
+        font-weight: bold;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 8px 15px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .result {
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Encriptador de Texto</h1>
+      <label for="text">Texto:</label>
+      <textarea id="text" rows="4" placeholder="Ingresa el texto"></textarea>
+      <label for="option">Opción:</label>
+      <select id="option">
+        <option value="encriptar">Encriptar</option>
+        <option value="desencriptar">Desencriptar</option>
+      </select>
+      <button onclick="procesar()">Procesar</button>
+      <div class="result">
+        <h3>Resultado:</h3>
+        <textarea id="result" rows="4" readonly></textarea>
+        <button onclick="copiar()">Copiar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
